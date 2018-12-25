@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        body, html{
+            padding: 0;
+            margin: 0;
+            background-color: green;
+            height: 100%;
+        }
+        .box{
+            background-color: yellow;
+            width: 50%;
+            height: 50%;
+            /* padding-top: 50px; */
+            /* padding-left: 50px; */
+            /* margin-top: 50px; */
+            /* margin-left: 50px; */
+            padding: 20px 10px 5px 5px;
+            margin: 20px 10px 5px 5px;
+            
+        }
+        .inside-box{
+            background-color: blue;
+            width: 50%;
+            height: 50%;
+            /* border-width: 5px;
+            border-color: red;
+            border-style: dashed; */
+            border: 5px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div class = "box">
+        <div class = "inside-box"></div>
+    </div>
+</body>
+</html>
