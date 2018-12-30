@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
+    <style>
+      body {
+        height: 100vh;
+        background-color: pink;
+      }
+      .container {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar navbar-enxtend-lg navbar-white bg-dark">
+      hello bootstrap
+    </header>
+    <div class="container">
+      <!--중앙에 위차할 수 있게 한다-->
+      <div class="row">
+        <div class="col-3 bg-info">Hello 3</div>
+        <div class="col-9 bg-primary">Hello 9</div>
+      </div>
+      <div class="row">
+        <div class="col-2 bg-danger">hello 2</div>
+        <div class="col-8 bg-secondary">hello 8</div>
+        <div class="col-2 bg-danger">hello 2</div>
+      </div>
+      <div class="row">
+        <btn class="col-5"></btn>
+        <button class="btn btn-primary btn-lg">button</button>
+        <btn class="col-5"></btn>
+      </div>
+      <div class = "row">
+        <div class = "col-12 col-sm-6 col-md-4 col-lg-3 col-xl-1 bg-danger p-1"><!--p == padding, pt == padding-top-->
+          <!-- pt-0 pt-m-4 == if window size < md, then padding-top == 0. if window isze > md, then padding-top == 4 -->
+          <!--display property도 pt와 같은 방법으로 사용가능 display known as d, ex)d-flex justify-content-center 
+          justify-content-md-start-->
+          <!-- sm-phone-1line, md-table, lg-tablet,desktop, xl-desktop-->
+          hello
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Launch demo modal
+      </button> -->
+
+      <!-- Modal -->
+      <!-- <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
