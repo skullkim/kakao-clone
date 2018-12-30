@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <script src="main.js"></script>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+      .template {
+        width: 600px;
+        height: 600px;
+      }
+      .todo-list-item {
+        width: 100%;
+        font-size: 14px;
+        border: 1px solid #f0f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-column">
+      <div class="input-group">
+        <input id="todo" class="form-control" placeholder="To Do" />
+        <button id="confirm" class="btn btn-primary">확인</button>
+      </div>
+      <div id="list">
+        <div class="todo-list-item p-2 text-center">부트스트랩 공부하기</div>
+      </div>
+    </div>
+    <script>
+      document.querySelector('#confirm').onclick = fucntion(){
+        const message = document.querySelector("#todo").value;
+        document.querySelector('#list').innerHTML +=
+        '<div class="todo-list-item p-2 text-center">' + message + '</div>'
+        document.querySelector('#todo').value = '';
+        // console.log(message);
+      };
+    </script>
+  </body>
+</html>
